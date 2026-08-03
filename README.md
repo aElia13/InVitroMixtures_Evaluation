@@ -4,17 +4,27 @@
 
 Evaluation experiment of Digital Cytometry (or transcriptomic deconvolution) methods using:
 
--   Gene expression profiles (GEPs) of six pure cell lines as reference and ground truth.
+-   Gene expression profiles (GEPs) of six pure cell lines as reference and ground truth:
+    -   UPCI-SCC-040 (HNSCC tumor cells)
+    -   UPCI-SCC-131 (HNSCC tumor cells)
+    -   OKF6 (immortalized keratinocytes)
+    -   Dermal primary fibroblasts
+    -   Jurkat T-cells (immune cells)
+    -   Natural Killer (NK-92) cells (immune cells)
 -   Bulk data from our own mixtures generated *in vitro* mixtures using the six cell lines in different proportions (ground truth).
 
 ![Schematic visualization of the experimental workflow for digital cytometry evaluation. This figure was created with Biorender.com](imgs/Fig1_experiment_workflow.png)
 
-Publication: *currently under review; reference available once it is published#*
+Under three use cases: 1) different abundance in the buk, 2) inaccurate cells in the reference, and 3) presence of artifacts in the reference profiles.
 
-**Evaluated tools:**
+![Schematic description of use cases for the evaluation of digital cytometry algorithms. This figure was created with Biorender.com](imgs/Fig2_use_cases.png)
 
-| Name | Method | Estimation GEPs | Reference |
-|------------------|------------------|------------------|------------------|
+**Publication**: *currently under review; reference available once it is published*
+
+## **Methods**
+
+| [Name]{.underline} | [Method]{.underline} | [GEPs]{.underline} | [Reference]{.underline} |
+|:-----------------|:-----------------|:-----------------|:-----------------|
 | **CIBERSORTx** | Regression | Yes | <https://doi.org/10.1038/s41587-019-0114-2> |
 | **DWLS** | Regression | No | <https://doi.org/10.1038/s41467-019-10802-z> |
 | **BayesPrism** | Bayesian | Yes | <https://doi.org/10.1038/s43018-022-00356-3> |
@@ -25,32 +35,21 @@ Publication: *currently under review; reference available once it is published#*
 
 Available in GEO with accession number: [GSE324026](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324026)
 
-**Cell lines:**
-
--   UPCI-SCC-040 (HNSCC tumor cells)
--   UPCI-SCC-131 (HNSCC tumor cells)
--   OKF6 (immortalized keratinocytes)
--   Dermal primary fibroblasts
--   Jurkat T-cells (immune cells)
--   Natural Killer (NK-92) cells (immune cells)
-
-**Mixtures composition:**
-
-see data/InVitroMixtures.tsv
+**Mixtures composition:** see data/InVitroMixtures.tsv
 
 ## Code
 
 Main functions to perform evaluation experiment:
 
--   Running deconvolution: see code/01_RunningDigitalCytometry
+-   **Running deconvolution**: see code/01_RunningDigitalCytometry
 
--   Modifying reference profiles for Use Case 3: see code/02_NoiseAdditionReferenc
+-   **Modifying reference profiles for Use Case 3**: see code/02_NoiseAdditionReferenc
 
--   Output processing: see code/03_OutputProcessing (include ??)
+-   **Output processing**: see code/03_OutputProcessing (include ??)
 
--   Distances between output and ground truth: see code/04_DistancesFromGroundTruth
+-   **Distances between output and ground truth**: see code/04_DistancesFromGroundTruth
 
--   Recovery of the biological signal: see code/05_DownstreamAnalysis (might be modified for re-submission)
+-   **Recovery of the biological signal**: see code/05_DownstreamAnalysis (might be modified for re-submission)
 
 ## Authors
 
