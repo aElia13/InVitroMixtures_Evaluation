@@ -17,8 +17,6 @@ Evaluation experiment of Digital Cytometry (or transcriptomic deconvolution) met
 
 Under three use cases: 1) different abundance in the buk, 2) inaccurate cells in the reference, and 3) presence of artifacts in the reference profiles.
 
-![Schematic description of use cases for the evaluation of digital cytometry algorithms. This figure was created with Biorender.com](imgs/Fig2_use_cases.png)
-
 **Publication**: *currently under review; reference available once it is published*
 
 ## **Methods**
