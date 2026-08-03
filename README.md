@@ -23,7 +23,7 @@ Under three use cases: 1) different abundance in the buk, 2) inaccurate cells in
 
 ## **Methods**
 
-| [Name]{.underline} | [Method]{.underline} | [GEPs]{.underline} | [Reference]{.underline} |
+| Name | Method | GEPs | Reference |
 |:-----------------|:-----------------|:-----------------|:-----------------|
 | **CIBERSORTx** | Regression | Yes | <https://doi.org/10.1038/s41587-019-0114-2> |
 | **DWLS** | Regression | No | <https://doi.org/10.1038/s41467-019-10802-z> |
